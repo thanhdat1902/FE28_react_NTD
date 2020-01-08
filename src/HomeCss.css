@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #ffffff26, #00000014);
+}
+
+/*More*/
+
+/* Begin header carousel*/
+
+#more {
+    display: none;
+}
+
+.filmDetailsMin a {
+    font-weight: 0;
+}
+
+.filmDetails a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    transition: all .2s;
+}
+
+.filmDetailsMin a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: all .2s;
+}
+
+.filmDetails a:hover, .filmDetailsMin a:hover {
+    color: #fa5238;
+}
+
+.card {
+    border: none;
+}
+
+.card-footer {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.card-body {
+    padding: 0;
+}
+
+/*End header carousel*/
+
+/*begin ist movie*/
+
+.movie_item {
+    position: relative;
+}
+
+.movie_content .movie_item .movie_overplay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #ffffffa6, #000000ab);
+    opacity: 0;
+}
+
+.movie_content .movie_item .movie_play {
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.4s;
+    -webkit-transition: 0.7s;
+}
+
+.movie_play i {
+    font-size: 20px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 20px 20px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+}
+
+.movie_play:hover button i {
+    transform: scale(1.1);
+}
+
+.movie_content {
+    color: black;
+    text-decoration: none !important;
+    position: relative;
+}
+
+.movie_item button, .movie_btnMuaNgay {
+    padding: 15px 0;
+    position: absolute;
+    bottom: 10.5%;
+    left: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+}
+
+.movie_detail {
+    margin-top: 10px;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+}
+
+.movie_detail .tieude {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.movie_detail .time {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: gray;
+}
+
+.movie_content:hover .movie_overplay, .movie_content:hover .movie_play, .movie_content:hover button, .movie_content:hover .movie_btnMuaNgay {
+    opacity: 1;
+}
+
+.movie_content:hover .movie_detail {
+    opacity: 0;
+}
+
+/*end list movie */
+
+/* begin cụm rạp */
+
+.heThongRap ul{
+    list-style-type: none !important;
+    width: 100%;
+}
+.heThongRap ul li button img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding : 10px;
+}
+.heThongRap ul li button {
+    padding : 10px;
+    width : 100%;
+    text-align: center;
+    position: relative;
+    border : none;
+    background-color: transparent;
+}
+.cumrap ul li button {
+    padding : 10px;
+    width : 100%;
+    text-align: left;
+    position: relative;
+    border : none;
+    background-color: transparent;
+}
+.heThongRap .heThongRap_lopphu, .cumrap .cumrap_lopphu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    opacity: 1;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    z-index: 13;
+}
+.heThongRap li:hover .heThongRap_lopphu, .cumrap li:hover .cumrap_lopphu{
+    opacity: 0;
+}
+.heThongRap li:focus .heThongRap_lopphu, .cumrap li:focus .cumrap_lopphu{
+    opacity: 0;
+}
+
+.heThongRap .active .heThongRap_lopphu{
+    opacity: 0;
+}
+.cumrap .active .cumrap_lopphu {
+    opacity: 0;
+}
+
+/*end cụm rạp*/
+
+/*Begin review*/
+
+#more {
+    display: none;
+}
+
+.reviewTab .reviewItem.show .nav-link{
+    border: none;
+}
+
+.reviewLink, .reviewLink.active {
+    display: block;
+    transition: all .5s;
+    position: relative;
+    border: none;
+    font-size: 30px;
+    font-weight: 900;
+    padding: 10px 20px;
+}
+.reviewLink.active{
+    color : #fa5238 !important;
+    background-color: transparent !important;
+}
+.reviewTab .reviewLink:hover {
+    border: none;
+    color: #fa5238;
+    transform: scale(1.2);
+}
+
+.reviewTab .reviewLink, .reviewTab {
+    color: black;
+}
+.reviewTab {
+    border : none !important;
+}
+.reviewItem .nav-link{
+    border: none !important;
+}
+.filmDetailsMin a {
+    font-weight: 0;
+}
+
+.filmDetails a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    transition: all .2s;
+}
+
+.filmDetailsMin a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: all .2s;
+}
+
+.filmDetails a:hover, .filmDetailsMin a:hover {
+    color: #fa5238;
+    box-shadow: none;
+}
+
+.filmDetails {
+    border: none !important;
+    background-color: #EEEEEE !important;
+}
+
+.filmDetails .card-footer {
+    border: none !important;
+    background-color: #EEEEEE !important;
+    color: #4064AD;
+}
+.review_bg {
+    background-color: #EEEEEE !important;
+}
+.filmDetails .card-footer i {
+    cursor: pointer;
+    transition: all .5s;
+}
+.filmDetails .card-footer i:hover {
+    transform: scale(1.5);
+}
+
+.card-footer {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.card-body {
+    padding: 0;
+}
+
+/* Begin footer */
+
+.linePartner {
+    margin-bottom: 15px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.footer {
+    background: #000000e6;
+}
+
+.__footer {
+    width: 70%;
+}
+
+._rowfootertop {
+    padding-top: 15px;
+}
+
+._rowfooterbottom {
+    padding-bottom: 15px;
+}
+
+.td_footer {
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.col-sm-6 .webphim {
+    display: flex;
+}
+
+.webphim a {
+    margin-bottom: 5px;
+    display: block;
+    text-decoration: none;
+    color: #949494;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.webphim a:hover {
+    color: white;
+}
+
+.icon__img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.doitac a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.doitac a:hover {
+    opacity: .7;
+}
+
+.iconApp {
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.mobile_social_app a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #949494;
+}
+
+.hrfooter {
+    border-top: 1px solid #4a4a4a;
+}
+
+.infoFooter span:first-child {
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.infoFooter span {
+    color: #949494;
+    display: block;
+    line-height: 23px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* End footer */
+
+.navHomeTab .nav-item.show .navHomeLink, .navHomeTab .navHomeLink.active:focus {
+    border: none;
+}
+
+.navHomeLink, .navHomeLink.active {
+    display: block;
+    transition: all .5s;
+    position: relative;
+    border: none;
+    font-size: 20px;
+    padding: 10px 20px;
+}

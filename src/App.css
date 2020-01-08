@@ -1,0 +1,217 @@
+@import './nav.css';
+@import './HomeCss.css';
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.slick-slide {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Order Ticket Page */
+.danhSachGhe {
+  padding: 0 200px;
+}
+
+.buttonChoosed {
+  background-image: url(./img/notchoose.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.thanhToanGhe {
+  overflow-wrap: break-word;
+}
+
+
+
+/* Detail Page */
+.detail_page {
+  position: relative;
+  color: #E9E9E9;
+}
+.detail_page_content {
+  padding-top : 200px;
+  padding-bottom : 150px;
+}
+.detail_page_img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(25px);
+}
+
+.detail_bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.circle-rate {
+  margin : 30px 0;
+  background-color: rgba(0 , 0, 0, 0.6) ;
+  border: 5px solid greenyellow;
+  height: 100px;
+  width: 100px;
+  line-height: 80px !important;
+  text-align: center;
+  border-radius: 50%;
+  color: #E9E9E9;
+}
+.detail_page_star {
+  list-style-type: none;
+}
+.detail_page_star li {
+  color: coral;
+  font-size: 40px;
+  margin: 0 10px;
+  display: inline;
+}
+.detail-page-hethongrap{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.detail-page-hethongrap li {
+  display: inline;
+  margin: 30px;
+}
+.detail-page-hethongrap li button {
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  position: relative;
+}
+.detail-page-hethongrap li button img {
+  width: 100px;
+  height: 100px;
+}
+.detail-page-ngay {
+  list-style-type: none;
+}
+.detail-page-ngay li button{
+  position: relative;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  padding : 10px;
+}
+.detail-page-hethongrap .detail_rap_lopphu, .detail-page-ngay .detail_day_lopphu {
+  position: absolute;
+  z-index: 12;
+  width : 100%;
+  height: 100%;
+  top :0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.6);
+  opacity: 1;
+  transition: all .5s;
+} 
+.detail-page-ngay li:hover .detail_day_lopphu, .detail-page-hethongrap li:hover .detail_rap_lopphu {
+  opacity: 0;
+}
+.detail-page-ngay li:focus .detail_day_lopphu, .detail-page-hethongrap li:focus .detail_rap_lopphu {
+  opacity: 0;
+}
+.detail-page-ngay .active .detail_day_lopphu, .detail-page-hethongrap .active .detail_rap_lopphu {
+  opacity: 0;
+}
+
+/* HOME BACKGROUND */
+.home_content {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(-45deg, #a8edea, #fed6e3);
+  background-size: 400% 400%;
+  animation: gradientBG 3s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.navbar {
+  width: 100%;
+  position: fixed !important;
+  z-index: 1;
+}
+
+.navHome_bg {
+  background-image: linear-gradient(-45deg, #a8edea, #fed6e3);
+  z-index: 999;
+}
+
+
+/* Loading Icon */
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  z-index: 999;
+}
+
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  box-sizing: border-box;
+  border: 50px solid black;
+  border-color: rgb(24, 181, 202) transparent rgb(38, 207, 193) transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+
+
